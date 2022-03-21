@@ -1,22 +1,14 @@
 package fireopal.biomefaker.mixin;
 
-import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-import com.github.steveice10.opennbt.tag.builtin.CompoundTag;
-
-import org.geysermc.geyser.session.GeyserSession;
 import org.geysermc.geyser.translator.level.BiomeTranslator;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import fireopal.biomefaker.BiomeFaker;
 import fireopal.biomefaker.BiomeFakerRegistry;
-import it.unimi.dsi.fastutil.ints.Int2IntMap;
 import net.minecraft.resources.ResourceLocation;
 
 @Mixin(BiomeTranslator.class)
